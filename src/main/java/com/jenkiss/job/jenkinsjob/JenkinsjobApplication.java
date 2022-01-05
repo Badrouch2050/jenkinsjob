@@ -5,9 +5,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 public class JenkinsjobApplication {
-    // heloo cimmit
+
 
     public static void main(String[] args) {
+        System.out.println("Hello ! ");
         SpringApplication.run(JenkinsjobApplication.class, args);
     }
 
