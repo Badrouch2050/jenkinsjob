@@ -1,98 +1,179 @@
-Postes: 
-curl -X 'GET' \
-  'http://localhost:8083/api/referentiels/refpostes?page=1&size=10&sort=annee&direction=ASC' \
-  -H 'accept: */*'
-  Response Exemple : 
-  "totalPages": 1073741824,
-  "totalElements": 9007199254740991,
-  "size": 1073741824,
-  "content": [
-    {
-      "annee": 1073741824,
-      "modeleEf": "string",
-      "codePoste": "string",
-      "format": "string",
-      "niveau_1": "string",
-      "niveau_2": "string",
-      "niveau_3": "string",
-      "libelle": "string",
-      "complement": "string",
-      "restrict": "string",
-      "equiv_1": "string",
-      "equiv_2": "string",
-      "criticite": 1073741824
-    }
-  ],
-  "number": 1073741824,
-  "sort": {
-    "empty": true,
-    "sorted": true,
-    "unsorted": true
-  },
-  "pageable": {
-    "offset": 9007199254740991,
-    "sort": {
-      "empty": true,
-      "sorted": true,
-      "unsorted": true
-    },
-    "pageSize": 1073741824,
-    "pageNumber": 1073741824,
-    "paged": true,
-    "unpaged": true
-  },
-  "numberOfElements": 1073741824,
-  "first": true,
-  "last": true,
-  "empty": true
-}
-Indicateurs:
-curl -X 'GET' \
-  'http://localhost:8083/api/referentiels/refindicateurs?page=1&size=10&sort=annee&direction=ASC' \
-  -H 'accept: */*'
-  Response Exemple : 
 {
-  "totalPages": 1073741824,
-  "totalElements": 9007199254740991,
-  "size": 1073741824,
   "content": [
     {
-      "codeIndicateur": "string",
-      "annee": 1073741824,
-      "declinaisonModeleEF": "string",
-      "libelle": "string",
-      "poche": "string",
-      "rang": 1073741824,
-      "versionNumero": "string",
-      "versionCommentaire": "string",
-      "versionDate": "2025-06-19T12:20:44.009Z",
-      "definitionSuccinte": "string",
-      "commentaire": "string",
-      "calculTheorique": "string",
-      "declinaisonCalculEffectif": "string"
+      "codeIndicateur": "CSH_FLW_REF",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Cash Flow de R?f?rence",
+      "poche": "05 - Agregats - EBITDA/CAF/Cash Flows",
+      "rang": 11,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "EBITDA - IMP_SOC - CHG_FIN_INT + PRD_FIN_INT"
+    },
+    {
+      "codeIndicateur": "TX_MRG_COM",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de Marge Commerciale",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 1,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "MRG_COM / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_MRG_PRD",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de Marge De Production",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 2,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "MRG_PRD / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_VAL_AJT",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de Valeur Ajout?e",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 3,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "VAL_AJT / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_EBE",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux d'Exc?dent Brut d'Exploitation",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 4,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "EBE / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_EBITDA",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Marge d'EBITDA",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 5,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "EBITDA / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "ROS",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Rentabilit? d'Exploitation (ROS)",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 6,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "RES_EXP / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_RES_CAI",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de RCAI",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 7,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "RES_CAI / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_CAF",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de CAF",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 8,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "CAF / CHF_AFF"
+    },
+    {
+      "codeIndicateur": "TX_RES_NET",
+      "annee": 2025,
+      "declinaisonModeleEF": "2050",
+      "libelle": "Taux de R?sultat Net",
+      "poche": "06 - Ratios - SIG/Rentabilit?",
+      "rang": 9,
+      "versionNumero": "1",
+      "versionCommentaire": null,
+      "versionDate": "2025-01-10T23:00:00.000+00:00",
+      "definitionSuccinte": null,
+      "commentaire": null,
+      "calculTheorique": null,
+      "declinaisonCalculEffectif": "RES_NET / CHF_AFF"
     }
   ],
-  "number": 1073741824,
-  "sort": {
-    "empty": true,
-    "sorted": true,
-    "unsorted": true
-  },
   "pageable": {
-    "offset": 9007199254740991,
+    "pageNumber": 1,
+    "pageSize": 10,
     "sort": {
-      "empty": true,
+      "empty": false,
       "sorted": true,
-      "unsorted": true
+      "unsorted": false
     },
-    "pageSize": 1073741824,
-    "pageNumber": 1073741824,
+    "offset": 10,
     "paged": true,
-    "unpaged": true
+    "unpaged": false
   },
-  "numberOfElements": 1073741824,
-  "first": true,
-  "last": true,
-  "empty": true
+  "totalElements": 120,
+  "totalPages": 12,
+  "last": false,
+  "size": 10,
+  "number": 1,
+  "sort": {
+    "empty": false,
+    "sorted": true,
+    "unsorted": false
+  },
+  "numberOfElements": 10,
+  "first": false,
+  "empty": false
 }
-
