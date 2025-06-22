@@ -283,3 +283,34 @@ curl -X 'GET' \
   "numberOfElements": 10,
   "empty": false
 }
+curl -X 'GET' \
+  'http://localhost:8083/api/etatFinancier/266' \
+  -H 'accept: */*'
+{
+  "siret": "24791789827674",
+  "siren": "247917898",
+  "entite": "cnBQs",
+  "codeBanque": "08450",
+  "codeETB": "6Ky",
+  "idClientFederal": "LDZsXflHN8",
+  "modeleEF": "2050",
+  "codeDevise": "EUR",
+  "idClientLocal": "MOr06fQ5q22eJeyGK4WL",
+  "dateCRE": "2025-03-19",
+  "dureeEX": 10,
+  "dateCLO": "2025-03-18",
+  "typeEF": "C",
+  "anneeEF": 2025,
+  "millesime": 2026,
+  "periodiciteEF": "A",
+  "topConfidentiel": 0,
+  "topPublie": 1,
+  "unite": "3",
+  "statutEF": "v",
+  "traitement": "M",
+  "raisonSOC": "TKWaogGYmMRGuLC",
+  "adresseCLT": "egRwSGZZYgIyEGv",
+  "dateFile": "2025-03-18T10:10:54Z",
+  "version": 1,
+  "id": 266
+}
